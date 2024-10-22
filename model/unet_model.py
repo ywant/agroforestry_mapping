@@ -55,8 +55,7 @@ class UnetModel(BaseModel, torch.nn.Module):
             self.unet.encoder.conv1 = torch.nn.Conv2d(4, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
         elif opt.ckpt == "bigearthnet":
             self.unet = smp.Unet("resnet50", in_channels=4, encoder_weights='imagenet', classes=NUM_CLASSES-1)
-            bigearthnet_ckpt_path = "/mnt/warehouse/experiments/perennial_fallow_forest/test/model/tfs_4bands/latest_net_feature_extractor.pth"
-            #bigearthnet_ckpt_path = "/mnt/warehouse/experiments/perennial_fallow_forest/test/model/0328_1025/latest_net_unet.pth"
+            bigearthnet_ckpt_path = "latest_net_unet.pth"
 
             bigearthnet_ckpt = torch.load(bigearthnet_ckpt_path)
             ipdb.set_trace()
