@@ -155,11 +155,7 @@ print(j, "IGNORE / INVALID")
 
 class PeruDataset(BaseDataset):
     def __init__(self, opt=None, mode="train"):
-        #self.dataroot = "/mnt/warehouse/experiments/perennial_fallow_forest/a_lastex/input_data/test_temp"
-        self.dataroot = "/mnt/warehouse/experiments/perennial_fallow_forest/a_lastex/input_data/sep22/all_4bands_classes"
-        #self.dataroot = '/mnt/warehouse/experiments/perennial_fallow_forest/a_lastex/input_data/sep22/S1S3S4_4bands_classes'
-        #self.dataroot = '/mnt/warehouse/experiments/perennial_fallow_forest/input_data/s1s2s3s4'
-        #self.dataroot = "/home/wanting/input_data_4_bands_original"
+        #self.dataroot = "/input_data"
         #self.split_root = os.path.join(self.dataroot, "all")
         self.split_root = os.path.join(self.dataroot, 'all')
         self.mode = mode
