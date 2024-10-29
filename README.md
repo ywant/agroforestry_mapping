@@ -12,6 +12,7 @@ conda env create -f environment_for_agroforest.yml
 
 #### 1.1 Download the samples within the link (https://zenodo.org/records/13946752)
 #### 1.2 Download the Nicfi tiles that is overlay with the samples (https://www.planet.com/nicfi/)
+##### we used 3m resolution Planerscope,but you are welcomed to apply 5m NICFI data to give a try!
 ##### you can download the data through Google Earth Engine
 #### 1.3 Stack the Nicfi data with samples to make the data ready for training
 ##### we saved the training dataset with .npy
