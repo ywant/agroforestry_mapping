@@ -4,6 +4,7 @@
 ## How to use the code
 
 ### 0 set the conda environment
+```python
 conda env create -f environment_for_agroforest.yml
 
 ### 1 prepare the data
@@ -18,4 +19,5 @@ conda env create -f environment_for_agroforest.yml
 
 #### 2.1 change the dataroot with your dataset
 #### 2.2 ready for training
+```python
 python train.py --model unet --alpha 0.1 --batch-size 16 --gpu-ids 0 --imsize 128 --lr 8e-7 --lr-policy poly --net resnet50 --num-threads 32 --niter 1000 --val-freq 2000 --print-freq 10 --checkpoints-dir your_pathway_for_model
